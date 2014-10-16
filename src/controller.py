@@ -4,7 +4,6 @@ import math
 import sys
 
 import rospy
-from turtlesim.msg import Pose
 from turtlesim.srv import TeleportAbsolute
 
 

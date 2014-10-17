@@ -60,10 +60,10 @@ if __name__ == '__main__':
         twist.linear.x = velocity
         twist.angular.z = w
         pub.publish(twist)
-        #make current speed, previous speed for next loop
+        #set pose angle for next loop
         theta1 = theta2
 
-        # update time
+        # update time and reset if > period (T)
         t += delta
         if t > T:
             t = 0

@@ -16,7 +16,7 @@ if __name__ == '__main__':
     #publish to cmd_velocity
     pub = rospy.Publisher('/turtle1/cmd_vel', Twist, queue_size=10)
 
-    #adjust rate at which velocity is update
+    #adjust rate at which velocity is updated
     delta = 0.001
     r = rospy.Rate(1/delta) # set rate in hertzs
     t = delta

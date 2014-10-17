@@ -63,7 +63,7 @@ if __name__ == '__main__':
         #set pose angle for next loop
         theta1 = theta2
 
-        # update time and reset if > period (T)
+        # update time (t) and reset time if t > T
         t += delta
         if t > T:
             t = 0
